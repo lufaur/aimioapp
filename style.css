@@ -216,42 +216,37 @@ h1.headline span { color: var(--accent); }
 }
 .hero-meta span { display: inline-flex; align-items: center; gap: 6px; }
 
-/* ---------- Phone / remote mock ---------- */
+/* ---------- Phone / real app screenshot frame ---------- */
 .hero-visual { position: relative; display: flex; justify-content: center; }
-.phone {
-    width: 280px;
-    border-radius: 44px;
-    background: linear-gradient(180deg, var(--surface), var(--surface-2));
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow-lg);
-    padding: 18px;
+.device-frame {
     position: relative;
+    width: 268px;
+    padding: 14px;
+    border-radius: 52px;
+    background: linear-gradient(160deg, #2a2a30, #0c0c0f);
+    box-shadow: var(--shadow-lg), inset 0 0 0 1px rgba(255,255,255,0.08);
 }
-.phone-notch {
-    width: 90px; height: 22px;
-    background: var(--bg);
+.device-frame::after {
+    content: "";
+    position: absolute;
+    top: 24px; left: 50%;
+    transform: translateX(-50%);
+    width: 84px; height: 24px;
+    background: #000;
     border-radius: var(--radius-pill);
-    margin: 0 auto 16px;
+    z-index: 2;
 }
-.remote-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 4px 16px;
+.device-frame picture, .device-frame img {
+    display: block;
+    width: 100%;
+    border-radius: 38px;
 }
-.remote-title { font-weight: 700; font-size: 0.95rem; }
-.status-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.72rem;
-    font-weight: 700;
-    color: var(--connected);
-    background: var(--connected-bg);
-    padding: 5px 10px;
-    border-radius: var(--radius-pill);
+.device-caption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--ink-muted);
+    margin-top: 16px;
 }
-.status-pill .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--connected); }
 
 .dpad {
     width: 168px;
@@ -285,18 +280,6 @@ h1.headline span { color: var(--accent); }
     background: var(--accent);
     box-shadow: 0 6px 18px color-mix(in srgb, var(--accent) 55%, transparent);
 }
-
-.key-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-.key {
-    aspect-ratio: 1;
-    border-radius: var(--radius-key);
-    background: var(--surface-2);
-    display: grid;
-    place-items: center;
-    color: var(--ink-secondary);
-    font-size: 1.1rem;
-}
-.key.power { background: var(--power); color: #fff; }
 
 /* ---------- Sections ---------- */
 section { padding: 88px 0; }
