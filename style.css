@@ -269,6 +269,16 @@ h1.headline span { color: var(--accent); }
     border-radius: 50%;
     border: 1.5px solid var(--border);
 }
+.dpad .arrow {
+    position: absolute;
+    font-size: 0.95rem;
+    color: var(--ink-muted);
+    line-height: 1;
+}
+.dpad .arrow.up    { top: 22px; left: 50%; transform: translateX(-50%); }
+.dpad .arrow.down  { bottom: 22px; left: 50%; transform: translateX(-50%); }
+.dpad .arrow.left  { left: 22px; top: 50%; transform: translateY(-50%); }
+.dpad .arrow.right { right: 22px; top: 50%; transform: translateY(-50%); }
 .dpad .ok {
     width: 62px; height: 62px;
     border-radius: 50%;
