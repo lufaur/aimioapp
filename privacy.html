@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Aimio</title>
+<meta name="description" content="Aimio's privacy policy: no account, no ads, no tracking, no data collection. Aimio talks to your TV directly over your own Wi-Fi and nothing leaves your device.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://lufaur.github.io/aimioapp/privacy.html">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#3A4CB8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0C18" media="(prefers-color-scheme: dark)">
+</head>
+<body>
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-brand" href="index.html"><img src="assets/app-icon.png" alt="">Aimio</a>
+    <div class="nav-links">
+      <a href="index.html#brands">TV Brands</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="support.html">Support</a>
+      <a class="nav-cta" href="https://apps.apple.com/app/aimio" rel="noopener">Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<div class="legal-wrap">
+  <a class="back-link" href="index.html">← Back to Aimio</a>
+  <h1>Privacy Policy</h1>
+  <p class="legal-updated">Last updated August 24, 2026</p>
+
+  <p>Aimio is built to work without knowing anything about you. This page explains exactly what that means in practice, not just in principle.</p>
+
+  <h2>The short version</h2>
+  <ul>
+    <li>Aimio does not require an account, sign-in, or email address.</li>
+    <li>Aimio does not collect, transmit, or sell any personal data.</li>
+    <li>Aimio does not use analytics, advertising, or tracking SDKs of any kind.</li>
+    <li>Aimio's App Store privacy label declares zero data types collected — you can verify this yourself on Aimio's App Store listing under "App Privacy."</li>
+  </ul>
+
+  <h2>How Aimio finds and controls your TV</h2>
+  <p>When you open Aimio, it looks for TVs on the same Wi-Fi network your iPhone, iPad or Apple Watch is connected to, using each manufacturer's own discovery protocol (for example Bonjour/mDNS, or the brand's native pairing flow). Once paired, Aimio sends remote-control commands — power, volume, navigation, and so on — directly to your TV's IP address on your local network.</p>
+  <p><strong>No command, pairing token, or TV information is ever sent to Aimio's developer, to any analytics service, or to any third party.</strong> There is no server in between. If your Wi-Fi network is offline, Aimio has nothing to talk to and nothing to send anywhere else.</p>
+
+  <h2>What's stored, and where</h2>
+  <p>Aimio stores the following information locally, on your device only:</p>
+  <ul>
+    <li>The list of TVs you've paired, and their local network address.</li>
+    <li>The pairing token or credential each TV brand issues for its own protocol (for example, a Roku pairing key or a Samsung Tizen token), kept in the device's secure keychain.</li>
+    <li>Your app preferences — button layout, high-contrast skin, default button size, and similar settings — kept in standard iOS app storage.</li>
+  </ul>
+  <p>None of this data is transmitted off your device by Aimio. If you use iCloud device backup or iCloud Keychain, iOS may include this local data in your own personal backup the same way it would for any app's local data — that is a feature of your device and your Apple ID, not something Aimio initiates or has access to.</p>
+
+  <h2>Purchases and subscriptions</h2>
+  <p>Aimio Pro purchases (the annual subscription and the one-time lifetime purchase) are processed entirely by Apple through the App Store's StoreKit framework. Aimio never sees or stores your payment card details, billing address, or Apple ID password. Apple's own <a href="https://www.apple.com/legal/privacy/" rel="noopener">Privacy Policy</a> governs the transaction itself.</p>
+
+  <h2>Permissions Aimio asks for</h2>
+  <ul>
+    <li><strong>Local Network:</strong> required to discover and send commands to your TV over Wi-Fi. This is the only network permission Aimio requests, and it is used only for TV discovery and control.</li>
+  </ul>
+  <p>Aimio does not request access to your contacts, photos, microphone (beyond the optional Siri/Voice Control features you explicitly enable), location, or any other data category not listed above.</p>
+
+  <h2>Children's privacy</h2>
+  <p>Aimio is a utility app not directed at children and does not knowingly collect any information from anyone, regardless of age — there is no data collection to begin with.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy ever changes, the "Last updated" date at the top of this page will change with it, and the new version will be posted here before it takes effect.</p>
+
+  <h2>Contact</h2>
+  <div class="contact-card">
+    <div>
+      <strong>Questions about this policy?</strong>
+      <p style="margin:6px 0 0;">Reach out any time and a real person will answer.</p>
+    </div>
+    <a class="btn btn-primary email-link" data-u="lufaur" data-d="icloud.com" href="#">Email us</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <a class="footer-brand" href="index.html"><img src="assets/app-icon.png" alt="">Aimio</a>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="support.html">Support</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('.email-link').forEach(function (el) {
+  var addr = el.dataset.u + '@' + el.dataset.d;
+  el.textContent = addr;
+  el.href = 'mailto:' + addr;
+});
+</script>
+</body>
+</html>
