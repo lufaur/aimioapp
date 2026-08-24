@@ -217,7 +217,7 @@ h1.headline span { color: var(--accent); }
 .hero-meta span { display: inline-flex; align-items: center; gap: 6px; }
 
 /* ---------- Phone / real app screenshot frame ---------- */
-.hero-visual { position: relative; display: flex; justify-content: center; }
+.hero-visual { position: relative; display: flex; align-items: flex-start; justify-content: center; }
 .device-frame {
     position: relative;
     width: 268px;
@@ -236,9 +236,16 @@ h1.headline span { color: var(--accent); }
     border-radius: var(--radius-pill);
     z-index: 2;
 }
-.device-frame picture, .device-frame img {
+.device-frame picture {
     display: block;
     width: 100%;
+}
+.device-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 449 / 800;
+    object-fit: cover;
     border-radius: 38px;
 }
 .device-caption {
