@@ -363,7 +363,7 @@ h2 {
 .not-supported strong { color: var(--ink-secondary); }
 
 /* ---------- Pricing ---------- */
-.pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 760px; margin: 0 auto; }
+.pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1080px; margin: 0 auto; }
 .price-card {
     background: var(--surface);
     border: 1px solid var(--border);
